@@ -1,0 +1,15 @@
+#machine that accepts three consecutive one's
+
+str = input("Enter the string: ")
+if len(s)<3:
+    print("No")
+else:    
+    flag = 0
+    for i in range(len(s)-2):
+        if str[i]=='1' and str[i+1]=='1' and str[i+2]=='1':
+            print("yes")
+            flag = 1
+            break;
+
+    if flag==0:
+        print("no")
